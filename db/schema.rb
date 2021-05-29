@@ -10,13 +10,15 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2021_05_29_031245) do
+ActiveRecord::Schema.define(version: 2021_05_29_171445) do
 
   create_table "flashcards", force: :cascade do |t|
     t.string "question"
     t.text "content"
     t.datetime "created_at", precision: 6, null: false
     t.datetime "updated_at", precision: 6, null: false
+    t.boolean "public_flashcard"
+    t.boolean "private_flashcard"
   end
 
   create_table "user_flashcards", force: :cascade do |t|
