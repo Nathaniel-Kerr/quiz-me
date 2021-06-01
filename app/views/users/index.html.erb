@@ -1,0 +1,9 @@
+<h1>Quiz-Me-Lots</h1>
+<%# #remove whole if statement %>
+
+<% if @user %>
+<h1>Welcome: <%= @user.name %></h1><br> 
+<% end %>
+
+<%= link_to 'Login', login_path('login') %><br>
+<%= link_to 'Create Account', user_path('new') %>

@@ -1,0 +1,4 @@
+<% if @user %>
+<h1>Welcome:<%= @user.name %></h1><br>
+<% end %>
+<%= button_to"Logout", logout_path, method: "delete" %>
